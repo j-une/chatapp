@@ -1,0 +1,81 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); */
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: sans-serif;
+  background-color: #4b4b4b;
+}
+
+.chat-area, .home {
+  margin-top: 60px;
+}
+
+.chat-area {
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.chat-area .chat-bubble {
+  background-color: #ebf5eb;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.chat-bubble .chat-time {
+  font-size: 12px;
+  color: #4b4b4b;
+  text-align: right;
+}
+
+.chat-area .chat-bubble.current-user {
+  margin-left: auto;
+  background-color: #dccce4;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: #4a7d3d;
+}
+
+.btn-create {
+  background-color: #4a7d3d;
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-submit {
+  background-color: #4a7d3d;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .chat-area .chat-bubble {
+    max-width: 250px;
+  }
+}
